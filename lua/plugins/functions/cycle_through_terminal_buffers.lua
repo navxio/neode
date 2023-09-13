@@ -43,5 +43,3 @@ _G.cycle_focus_terminal_buffers = function()
     end
   end
 end
-
-vim.api.nvim_set_keymap("n", "<c-,>", ":lua cycle_focus_terminal_buffers()<CR>", { noremap = true, silent = true })

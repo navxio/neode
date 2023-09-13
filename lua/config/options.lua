@@ -13,3 +13,9 @@ vim.cmd("set nonumber")
 -- setup vim global
 
 vim.g.gitblame_message_template = "<summary> • <date> • <author>"
+
+-- nvim ufo things
+vim.o.foldcolumn = "1"
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true

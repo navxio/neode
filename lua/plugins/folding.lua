@@ -77,7 +77,6 @@ return {
     opts = {
       fold_virt_text_handler = foldVirtualTextHandler,
     },
-    enabled = false,
     keys = {
       {
         "zR",

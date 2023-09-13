@@ -1,0 +1,38 @@
+{
+  "init_logger": {
+    "prefix": "l.l",
+    "body": [
+      "import logging\nlogger=logging.getLogger(__name__)\n$1"
+    ]
+  },
+  "logger_debug": {
+    "prefix": "l.d",
+    "body": [
+      "logger.debug(f\"$1\")"
+    ]
+  },
+  "logger_info": {
+    "prefix": "l.i",
+    "body": [
+      "logger.info(f\"$1\")"
+    ]
+  },
+  "logger_warning": {
+    "prefix": "l.w",
+    "body": [
+      "logger.warning(f\"$1\")"
+    ]
+  },
+  "logger_error": {
+    "prefix": "l.e",
+    "body": [
+      "logger.error(f\"$1\")"
+    ]
+  },
+  "logger_critical": {
+    "prefix": "l.c",
+    "body": [
+      "logger.critical(f\"$1\")"
+    ]
+  }
+}

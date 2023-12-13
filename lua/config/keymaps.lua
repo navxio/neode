@@ -4,6 +4,18 @@
 --
 -- open filesystem to the right
 -- vim.keymap.set("n", "<c-n>", ":Neotree filesystem toggle reveal right<cr>")
+local Util = require("lazyvim.util")
+
+local map = Util.safe_keymap_set
+
+-- override lazygit keybindings
+map("n", "<c-g>", function()
+  Util.terminal({ "lazygit" }, { cwd = Util.root(), esc_esc = false, ctrl_hjkl = false })
+end, { desc = "Lazygit (root dir)" })
+map("n", "<c-G>", function()
+  Util.terminal({ "lazygit" }, { esc_esc = false, ctrl_hjkl = false })
+end, { desc = "Lazygit (cwd)" })
+
 vim.keymap.set("n", "X", "<cmd>lua vim.api.nvim_buf_delete(vim.api.nvim_get_current_buf(), {force = true})<cr>")
 
 -- luasnip list all snippets keybindings
@@ -65,11 +77,8 @@ vim.keymap.set("n", "<c-.>", "<cmd>AerialNavToggle<cr>")
 -- show all available snippets
 vim.keymap.set("n", "<leader>se", "<cmd>lua _ivy_snippets()<cr>")
 
--- open terminal with tt
+-- open new terminal tab with tt
 vim.keymap.set("n", "tt", ":term<cr>")
-
--- open floatterm
-vim.keymap.set("n", "<c-`>", ":FloatermToggle<cr>")
 
 -- NeoAI bindings
 vim.keymap.set("n", "<leader>nn", ":NeoAIToggle<cr>")
@@ -80,3 +89,11 @@ vim.keymap.set("n", "<leader>ni", ":NeoAI<CR>")
 vim.keymap.set("n", ";", ":")
 
 vim.keymap.set("n", "<c-t>", "<cmd>lua _cycle_focus_terminal_buffers()<CR>")
+
+-- setup restnvim keybindings
+vim.keymap.set("n", "<leader>xr", "<Plug>RestNvim")
+vim.keymap.set("n", "<leader>xp", "<Plug>RestNvimPreview")
+vim.keymap.set("n", "<leader>xl", "<Plug>RestNvimLast")
+
+-- goto-preview
+vim.keymap.set("n", "gp", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", { noremap = true })

@@ -8,10 +8,4 @@ return {
     lazy = false,
     priority = 1001,
   },
-  {
-    "akinsho/toggleterm.nvim",
-  },
-  {
-    "voldikss/vim-floaterm",
-  },
 }

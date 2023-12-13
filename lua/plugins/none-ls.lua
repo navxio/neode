@@ -1,6 +1,6 @@
 return {
   {
-    "jose-elias-alvarez/null-ls.nvim",
+    "nvimtools/none-ls.nvim",
     opts = function()
       local nls = require("null-ls")
       return {
@@ -18,9 +18,7 @@ return {
           nls.builtins.formatting.nginx_beautifier,
           nls.builtins.formatting.pg_format,
           nls.builtins.formatting.taplo,
-          nls.builtins.formatting.remark,
           nls.builtins.formatting.phpcsfixer,
-          -- nls.builtins.diagnostics.flake8,
         },
       }
     end,

@@ -16,7 +16,7 @@ map("n", "<c-G>", function()
   Util.terminal({ "lazygit" }, { esc_esc = false, ctrl_hjkl = false })
 end, { desc = "Lazygit (cwd)" })
 
-vim.keymap.set("n", "X", "<cmd>lua vim.api.nvim_buf_delete(vim.api.nvim_get_current_buf(), {force = true})<cr>")
+vim.keymap.set("n", "<c-x>", "<cmd>lua vim.api.nvim_buf_delete(vim.api.nvim_get_current_buf(), {force = true})<cr>")
 
 -- luasnip list all snippets keybindings
 _G._ivy_snippets = function()
@@ -100,3 +100,19 @@ vim.keymap.set("n", "gp", "<cmd>lua require('goto-preview').goto_preview_definit
 
 -- off a random reddit thread
 vim.keymap.set("i", "<c-bs>", "<esc>cvb", {})
+
+-- comment-box related keybindings
+
+local opts = { noremap = true, silent = true }
+vim.keymap.set({ "n", "v" }, "<Leader>db", "<Cmd>CBccbox<CR>", opts)
+-- Named parts
+vim.keymap.set({ "n", "v" }, "<Leader>dt", "<Cmd>CBllline<CR>", opts)
+-- Simple line
+--
+vim.keymap.set("n", "<Leader>dl", "<Cmd>CBline<CR>", opts)
+-- keymap("i", "<M-l>", "<Cmd>CBline<CR>", opts) -- To use in Insert Mode
+-- Marked comments
+vim.keymap.set({ "n", "v" }, "<Leader>dm", "<Cmd>CBllbox14<CR>", opts)
+-- Removing a box is simple enough with the command (CBd), but if you
+-- use it a lot:
+vim.keymap.set({ "n", "v" }, "<Leader>dd", "<Cmd>CBd<CR>", opts)

@@ -2,8 +2,10 @@ return {
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
+      popup_border_style = "rounded",
       window = {
-        position = "right",
+        position = "float",
+        width = 80,
       },
     },
   },

@@ -12,12 +12,10 @@ return {
             extra_args = { "--dialect", "postgres" },
           }),
           nls.builtins.diagnostics.dotenv_linter,
-          nls.builtins.diagnostics.jsonlint,
           nls.builtins.formatting.prettierd,
           nls.builtins.formatting.djlint,
           nls.builtins.formatting.nginx_beautifier,
           nls.builtins.formatting.pg_format,
-          nls.builtins.formatting.taplo,
           nls.builtins.formatting.phpcsfixer,
         },
       }

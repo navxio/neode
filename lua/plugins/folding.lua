@@ -79,40 +79,42 @@ return {
     },
     keys = {
       {
-        "zR",
+        ",R",
         function()
           require("ufo").openAllFolds()
         end,
         desc = "Open all folds",
       },
       {
-        "zM",
+        ",M",
         function()
           require("ufo").closeAllFolds()
         end,
         desc = "Close all folds",
       },
       {
-        "zr",
+        ",r",
         function()
           require("ufo").openFoldsExceptKinds()
         end,
         desc = "Open more",
       },
       {
-        "zm",
+        ",m",
         function()
           require("ufo").closeFoldsWith()
         end,
         desc = "Close more",
       },
       {
-        "zP",
+        ",P",
         function()
           require("ufo.preview"):peekFoldedLinesUnderCursor()
         end,
         desc = "Preview folds",
       },
+      { ",c", "<Cmd>foldclose<CR>", mode = "n", desc = "Close current fold" },
+      { ",o", "<Cmd>foldopen<CR>", mode = "n", desc = "Open current fold" },
     },
   },
 }

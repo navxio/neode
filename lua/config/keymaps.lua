@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 --
 -- open filesystem to the right
--- vim.keymap.set("n", "<c-n>", ":Neotree filesystem toggle reveal right<cr>")
+vim.keymap.set("n", "<c-n>", ":Neotree toggle<cr>")
 local Util = require("lazyvim.util")
 
 local map = Util.safe_keymap_set

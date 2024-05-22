@@ -101,6 +101,12 @@ return {
           provider = {
             name = "file_info",
             opts = {
+              type = "full-path",
+            },
+          },
+          short_provider = {
+            name = "file_info",
+            opts = {
               type = "relative-short",
             },
           },

@@ -10,8 +10,8 @@ return {
         open_mapping = [[<c-`>]],
         direction = "float",
         on_create = function()
-          -- source .venv/bin/activate
-          vim.cmd("TermExec cmd='source .venv/bin/activate'")
+          -- source .venv/bin/activate only if it exists
+          vim.cmd("TermExec cmd='[ -f .venv/bin/activate ] && source .venv/bin/activate'")
         end,
         start_in_insert = true,
         insert_mappings = true,

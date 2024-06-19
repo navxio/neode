@@ -10,7 +10,7 @@ local map = Util.safe_keymap_set
 
 -- override lazygit keybindings
 map("n", "<c-g>", function()
-  Util.terminal({ "lazygit" }, { cwd = Util.root(), esc_esc = false, ctrl_hjkl = false })
+  Util.terminal({ "lazygit" }, { cwd = Util.root(), esc_esc = true, ctrl_hjkl = false })
 end, { desc = "Lazygit (root dir)" })
 map("n", "<c-G>", function()
   Util.terminal({ "lazygit" }, { esc_esc = false, ctrl_hjkl = false })
@@ -75,7 +75,7 @@ end
 vim.keymap.set("n", "<c-.>", "<cmd>AerialNavToggle<cr>")
 
 -- show all available snippets
-vim.keymap.set("n", "<leader>se", "<cmd>lua _ivy_snippets()<cr>")
+vim.keymap.set("n", "<c-e>", "<cmd>lua _ivy_snippets()<cr>")
 
 -- open new terminal tab with tt
 vim.keymap.set("n", "tt", ":term<cr>")

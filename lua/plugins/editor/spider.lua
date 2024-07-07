@@ -1,3 +1,4 @@
+-- enhanced vim motion commands across camel, kebab, snake and space cases
 return {
   {
     "chrisgrieser/nvim-spider",

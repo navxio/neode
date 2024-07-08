@@ -116,3 +116,6 @@ vim.keymap.set({ "n", "v" }, "<Leader>dm", "<Cmd>CBllbox14<CR>", opts)
 -- Removing a box is simple enough with the command (CBd), but if you
 -- use it a lot:
 vim.keymap.set({ "n", "v" }, "<Leader>dd", "<Cmd>CBd<CR>", opts)
+
+-- no neck pain single keybinding
+vim.keymap.set({ "n", "v" }, "<Leader>np", "<Cmd>NoNeckPain<CR>", opts)

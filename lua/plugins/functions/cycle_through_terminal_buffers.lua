@@ -43,3 +43,5 @@ _G.cycle_focus_terminal_buffers = function()
     end
   end
 end
+
+return nil

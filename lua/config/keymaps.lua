@@ -119,3 +119,6 @@ vim.keymap.set({ "n", "v" }, "<Leader>dd", "<Cmd>CBd<CR>", opts)
 
 -- no neck pain single keybinding
 vim.keymap.set({ "n", "v" }, "<Leader>np", "<Cmd>NoNeckPain<CR>", opts)
+
+-- gen nvim mappings
+vim.keymap.set({ "n", "v" }, "<Leader>]", ":Gen<CR>", opts)

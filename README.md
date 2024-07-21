@@ -2,10 +2,6 @@
 
 ### Powered by [neovim](https://neovim.io) & [lazyvim](https://github.com/lazyvim/lazyvim)
 
-### Features
-
-Web dev enabled
-
 ### Intro
 
 This config is actually an extension of the excellent lazyvim.org distro which i have modulated for my own purposes. It has most of the core power of lazyvim which includes:

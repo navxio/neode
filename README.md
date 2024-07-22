@@ -9,7 +9,7 @@ This config is actually an extension of the excellent lazyvim.org distro which i
 - multiple web languages support
 - preconfigured completion with snippets support
 - git integration
-- ui candy
+- telescope bazed fuzzy finder with different strategies
 - file explorer
 - floating terminal
 - lua dev support
@@ -23,3 +23,17 @@ This config is actually an extension of the excellent lazyvim.org distro which i
 `<leader>se` list all the relevant snippets in`ivy` view
 
 `<leader>l` lazyvim window
+
+`<c-g>` open lazygit window (center)
+
+`<c-x>` close current window
+
+`<c-n>` neotree toggle
+
+`<c-.>` display code outline
+
+`<c-e>`
+
+#### TODO
+
+- [ ] screenshots

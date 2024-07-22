@@ -16,7 +16,7 @@ map("n", "<c-G>", function()
   Util.terminal({ "lazygit" }, { esc_esc = false, ctrl_hjkl = false })
 end, { desc = "Lazygit (cwd)" })
 
-vim.keymap.set("n", "<c-x>", "<cmd>lua vim.api.nvim_buf_delete(vim.api.nvim_get_current_buf(), {force = true})<cr>")
+vim.keymap.set("n", "<c-x>", ":bd<cr>")
 
 -- luasnip list all snippets keybindings
 _G._ivy_snippets = function()
@@ -72,7 +72,7 @@ _G._cycle_focus_terminal_buffers = function()
 end
 
 -- open aerial
-vim.keymap.set("n", "<c-.>", "<cmd>AerialNavToggle<cr>")
+vim.keymap.set("n", "<c-.>", "<cmd>Outline<cr>")
 
 -- show all available snippets
 vim.keymap.set("n", "<c-e>", "<cmd>lua _ivy_snippets()<cr>")

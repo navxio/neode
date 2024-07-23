@@ -122,3 +122,12 @@ vim.keymap.set({ "n", "v" }, "<Leader>np", "<Cmd>NoNeckPain<CR>", opts)
 
 -- gen nvim mappings
 vim.keymap.set({ "n", "v" }, "<Leader>]", ":Gen<CR>", opts)
+
+-- overseer commands
+vim.keymap.set({ "n", "v" }, "<leader>o", "<cmd>OverseerRun<cr>", opts)
+
+-- open config file
+vim.keymap.set({ "n", "v" }, "<leader>rc", ":e $MYVIMRC<cr>", opts)
+
+-- open keymap file
+vim.keymap.set({ "n", "v" }, "<leader>kb", ":e $MYVIMRC<cr>", opts)

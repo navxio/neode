@@ -1,7 +1,39 @@
-### Powered by [lazyvim](https://github.com/lazyvim/lazyvim)
+## Neo Development Environment
+
+### Powered by [neovim](https://neovim.io) & [lazyvim](https://github.com/lazyvim/lazyvim)
+
+### Intro
+
+This config is actually an extension of the excellent lazyvim.org distro which i have modulated for my own purposes. It has most of the core power of lazyvim which includes:
+
+- multiple web languages support
+- preconfigured completion with snippets support
+- git integration
+- telescope bazed fuzzy finder with different strategies
+- file explorer
+- floating terminal
+- lua dev support
 
 ### Major keybindings
 
-Press <C-`> to toggle a floating terminal window
+`C-` ` toggle floating terminal
 
-<leader>se : list all the relevant snippets in `ivy` view
+`C-t` open / switch to terminal window
+
+`<leader>se` list all the relevant snippets in`ivy` view
+
+`<leader>l` lazyvim window
+
+`<c-g>` open lazygit window (center)
+
+`<c-x>` close current window
+
+`<c-n>` neotree toggle
+
+`<c-.>` display code outline
+
+`<c-e>`
+
+#### TODO
+
+- [ ] screenshots

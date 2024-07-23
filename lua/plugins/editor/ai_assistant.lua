@@ -27,4 +27,14 @@ return {
       })
     end,
   },
+  {
+    "David-Kunz/gen.nvim",
+    opts = {
+      model = "dolphin-mixtral",
+    },
+    keys = {
+      { "<leader>]", desc = "GenAI" },
+    },
+    cmd = "Gen",
+  },
 }

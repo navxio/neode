@@ -124,10 +124,11 @@ vim.keymap.set({ "n", "v" }, "<Leader>np", "<Cmd>NoNeckPain<CR>", opts)
 vim.keymap.set({ "n", "v" }, "<Leader>]", ":Gen<CR>", opts)
 
 -- overseer commands
-vim.keymap.set({ "n", "v" }, "<leader>o", "<cmd>OverseerRun<cr>", opts)
+vim.keymap.set({ "n", "v" }, "<leader>ox", "<cmd>OverseerRun<cr>", opts)
+vim.keymap.set({ "n", "v" }, "<leader>ot", "<cmd>OverseerToggle<cr>", opts)
 
 -- open config file
 vim.keymap.set({ "n", "v" }, "<leader>rc", ":e $MYVIMRC<cr>", opts)
 
 -- open keymap file
-vim.keymap.set({ "n", "v" }, "<leader>kb", ":e $MYVIMRC<cr>", opts)
+vim.keymap.set({ "n", "v" }, "<leader>kb", ":e ~/.config/nvim/lua/config/keymaps.lua<cr>", opts)

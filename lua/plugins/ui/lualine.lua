@@ -74,18 +74,6 @@ return {
         t = colors.bright_red,
       }
 
-      local theme = {
-        normal = {
-          a = { fg = colors.bg_dark, bg = colors.blue },
-          b = { fg = colors.blue, bg = colors.white },
-          c = { fg = colors.white, bg = colors.bg_dark },
-          z = { fg = colors.white, bg = colors.bg_dark },
-        },
-        insert = { a = { fg = colors.bg_dark, bg = colors.orange } },
-        visual = { a = { fg = colors.bg_dark, bg = colors.green } },
-        replace = { a = { fg = colors.bg_dark, bg = colors.green } },
-      }
-
       local space = {
         function()
           return " "
@@ -234,12 +222,12 @@ return {
             space,
           },
           lualine_c = {
-            filename,
+            branch,
             filetype,
             space,
-            branch,
             diff,
             space,
+            filename,
             location,
           },
           lualine_x = {

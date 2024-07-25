@@ -26,6 +26,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.php" },
     { import = "lazyvim.plugins.extras.editor.overseer" },
     { import = "lazyvim.plugins.extras.editor.outline" },
+    { import = "lazyvim.plugins.extras.util.octo" },
+    { import = "lazyvim.plugins.extras.util.chezmoi" },
     -- import/override with your plugins
     { import = "plugins" },
   },

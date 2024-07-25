@@ -18,11 +18,6 @@ end, { desc = "Lazygit (cwd)" })
 
 vim.keymap.set("n", "<c-x>", ":bd<cr>")
 
--- luasnip list all snippets keybindings
-_G._ivy_snippets = function()
-  require("telescope").extensions.luasnip.luasnip(require("telescope.themes").get_ivy())
-end
-
 _G._cycle_focus_terminal_buffers = function()
   -- get all the current buffers
   local bufs = vim.api.nvim_list_bufs()
@@ -73,9 +68,6 @@ end
 
 -- open aerial
 vim.keymap.set("n", "<c-.>", "<cmd>Outline<cr>")
-
--- show all available snippets
-vim.keymap.set("n", "<c-e>", "<cmd>lua _ivy_snippets()<cr>")
 
 -- open new terminal tab with tt
 vim.keymap.set("n", "tt", ":term<cr>")

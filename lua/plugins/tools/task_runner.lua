@@ -1,6 +1,11 @@
 return {
   {
     "stevearc/overseer.nvim",
-    opts = {},
+    opts = {
+      templates = {
+        "builtin",
+        "task",
+      },
+    },
   },
 }

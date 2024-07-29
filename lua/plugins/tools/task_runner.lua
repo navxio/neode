@@ -4,7 +4,6 @@ return {
     opts = {
       templates = {
         "builtin",
-        "task",
       },
     },
   },

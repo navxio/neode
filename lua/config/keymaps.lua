@@ -74,9 +74,6 @@ end
 -- open aerial
 vim.keymap.set("n", "<c-.>", "<cmd>Outline<cr>")
 
--- show all available snippets
-vim.keymap.set("n", "<c-e>", "<cmd>lua _ivy_snippets()<cr>")
-
 -- open new terminal tab with tt
 vim.keymap.set("n", "tt", ":term<cr>")
 

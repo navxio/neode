@@ -8,3 +8,4 @@ foo.*
 data
 undo/
 .luarc.json
+lazy-lock.json

@@ -3,10 +3,6 @@
 -- Add any additional options here
 vim.o.shell = "zsh"
 
--- word wrap
--- vim.opt.textwidth = 80
--- vim.opt.wrapmargin = 2
--- vim.opt.wrap = true
 --
 vim.cmd("set nonumber")
 
@@ -17,6 +13,9 @@ vim.cmd("set wrap")
 
 vim.g.gitblame_message_template = "<author> • <summary> • <date>"
 -- vim.g.gitblame_display_virtual_text = 0
+
+-- gitsigns related
+vim.wo.signcolumn = "yes"
 
 -- nvim ufo things
 vim.o.foldcolumn = "0"

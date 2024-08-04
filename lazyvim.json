@@ -1,11 +1,6 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.coding.codeium",
-    "lazyvim.plugins.extras.dap.core",
-    "lazyvim.plugins.extras.lang.markdown",
-    "lazyvim.plugins.extras.lang.python",
-    "lazyvim.plugins.extras.lang.toml",
-    "lazyvim.plugins.extras.ui.treesitter-context"
+
   ],
   "news": {
     "NEWS.md": "6520"

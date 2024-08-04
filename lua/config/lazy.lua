@@ -28,7 +28,6 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.editor.overseer" },
     { import = "lazyvim.plugins.extras.editor.outline" },
     { import = "lazyvim.plugins.extras.util.octo" },
-    { import = "lazyvim.plugins.extras.util.chezmoi" },
     { import = "lazyvim.plugins.extras.coding.codeium" },
     { import = "lazyvim.plugins.extras.dap.core" },
     { import = "lazyvim.plugins.extras.lang.markdown" },

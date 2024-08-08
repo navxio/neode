@@ -35,33 +35,6 @@ api.nvim_create_autocmd("FileType", { pattern = "man", command = [[nnoremap <buf
 
 --
 
-local lineNumGrp = api.nvim_create_augroup("lineNum", { clear = true })
---#region
---
-api.nvim_create_autocmd("WinEnter", {
-  pattern = "*",
-  command = "setlocal relativenumber",
-  group = lineNumGrp,
-})
-
-api.nvim_create_autocmd("WinEnter", {
-  pattern = "*",
-  command = "setlocal number",
-  group = lineNumGrp,
-})
-
-api.nvim_create_autocmd("WinLeave", {
-  pattern = "*",
-  command = "setlocal norelativenumber",
-  group = lineNumGrp,
-})
-
-api.nvim_create_autocmd("WinLeave", {
-  pattern = "*",
-  command = "setlocal nonumber",
-  group = lineNumGrp,
-})
-
 -- Disable autoformat for sh files
 api.nvim_create_autocmd("FileType", {
   pattern = { "sh" },

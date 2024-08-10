@@ -29,9 +29,9 @@ vim.cmd("autocmd VimLeave * set guicursor=a:hor10-blinkon0")
 -- ephemeral windows close with q
 api.nvim_create_autocmd("FileType", {
   pattern = { "aerial-nav", "help", "startuptime", "qf", "lspinfo" },
-  command = [[nnoremap <buffer><silent> q :close<CR>]],
+  command = [[nnoremap <buffer><silent> <Esc> :close<CR>]],
 })
-api.nvim_create_autocmd("FileType", { pattern = "man", command = [[nnoremap <buffer><silent> q :quit<CR>]] })
+api.nvim_create_autocmd("FileType", { pattern = "man", command = [[nnoremap <buffer><silent> <Esc> :quit<CR>]] })
 
 --
 

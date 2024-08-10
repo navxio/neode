@@ -2,8 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 --
--- open filesystem to the right
-vim.keymap.set("n", "<c-n>", ":Neotree toggle<cr>")
 local Util = require("lazyvim.util")
 
 local map = Util.safe_keymap_set

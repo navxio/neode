@@ -2,6 +2,7 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
+    event = { "LazyFile", "VeryLazy" },
     keys = {
       { "<cr>", desc = "Increment selection" },
       { "<bs>", desc = "Decrement selection", mode = "x" },

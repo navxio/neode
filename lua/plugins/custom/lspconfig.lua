@@ -1,6 +1,7 @@
 return {
   {
     "neovim/nvim-lspconfig",
+    event = "LazyFile",
     opts = {
       diagnostics = {
         underline = true,

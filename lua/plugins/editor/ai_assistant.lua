@@ -37,4 +37,7 @@ return {
     },
     cmd = "Gen",
   },
+  {
+    "TabbyML/vim-tabby",
+  },
 }

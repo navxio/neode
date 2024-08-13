@@ -4,6 +4,7 @@ return {
     dependencies = {
       "rebelot/kanagawa.nvim",
     },
+    event = "BufReadPost",
     config = function()
       require("kanagawa").setup({})
       require("styler").setup({

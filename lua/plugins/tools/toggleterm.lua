@@ -2,6 +2,7 @@ return {
   {
     "akinsho/toggleterm.nvim",
     version = "*",
+    event = "VimEnter",
     keys = {
       { "<c-`>", "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
     },

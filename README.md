@@ -37,3 +37,7 @@ This config is actually an extension of the excellent lazyvim.org distro which i
 #### TODO
 
 - [ ] screenshots
+
+#### Stats
+
+Loading time: ~60ms

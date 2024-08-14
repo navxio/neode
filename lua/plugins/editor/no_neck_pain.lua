@@ -7,19 +7,7 @@ return {
       require("no-neck-pain").setup({
         autocmds = {
           enableOnVimEnter = true,
-        },
-        integrations = {
-          NeoTree = {
-            position = "right",
-            reopen = true,
-          },
-          outline = {
-            position = "right",
-            reopen = true,
-          },
-        },
-        bufferOptions = {
-          enabled = false,
+          skipEnteringNoNeckPainBuffer = true,
         },
       })
     end,

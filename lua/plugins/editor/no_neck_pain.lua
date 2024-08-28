@@ -6,7 +6,7 @@ return {
     config = function()
       require("no-neck-pain").setup({
         autocmds = {
-          enableOnVimEnter = true,
+          enableOnVimEnter = false,
           skipEnteringNoNeckPainBuffer = true,
         },
       })

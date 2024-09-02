@@ -11,7 +11,7 @@ return {
         workspaces = {
           {
             name = "default",
-            path = "/Users/nav/obsidian/base",
+            path = "/Users/nav/universal-0/",
           },
         },
       })

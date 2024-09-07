@@ -41,3 +41,7 @@ This config is actually an extension of the excellent lazyvim.org distro which i
 #### Stats
 
 Loading time: ~60ms
+
+#### Setup notes
+
+move config/go_task to .local/share/nvim/lazy/overseer.nvim/lua/overseer/template/navxio/go_task.lua

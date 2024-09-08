@@ -16,7 +16,14 @@ local lazygit = Terminal:new({
   -- function to run on opening the terminal
   on_open = function(term)
     vim.cmd("startinsert!")
-    vim.api.nvim_buf_set_keymap(term.bufnr, "n", "<Esc>", "<cmd>close<CR>", { noremap = true, silent = true })
+    vim.api.nvim_buf_set_keymap(
+      term.bufnr,
+      "t",
+      "<Esc>",
+      [[<Cmd>stopinsert | close<CR>]],
+      { noremap = true, silent = true }
+    )
+    -- vim.api.nvim_buf_set_keymap(term.bufnr, "t", "<Esc>", "<cmd>close<CR>", { noremap = true, silent = true })
   end,
 })
 

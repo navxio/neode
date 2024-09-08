@@ -1,6 +1,9 @@
 return {
   {
     "miversen33/netman.nvim",
+    config = function()
+      require("netman")
+    end,
   },
   {
     "nvim-neo-tree/neo-tree.nvim",

@@ -3,16 +3,28 @@
 -- Add any additional keymaps here
 --
 local Util = require("lazyvim.util")
+local Terminal = require("toggleterm.terminal").Terminal
 
 local map = Util.safe_keymap_set
+local lazygit = Terminal:new({
+  cmd = "lazygit",
+  dir = "git_dir",
+  direction = "float",
+  float_opts = {
+    border = "rounded",
+  },
+  -- function to run on opening the terminal
+  on_open = function(term)
+    vim.cmd("startinsert!")
+    vim.api.nvim_buf_set_keymap(term.bufnr, "n", "<Esc>", "<cmd>close<CR>", { noremap = true, silent = true })
+  end,
+})
 
--- override lazygit keybindings
-map("n", "<c-g>", function()
-  Util.terminal({ "lazygit" }, { cwd = Util.root(), esc_esc = true, ctrl_hjkl = false })
-end, { desc = "Lazygit (root dir)" })
-map("n", "<c-G>", function()
-  Util.terminal({ "lazygit" }, { esc_esc = false, ctrl_hjkl = false })
-end, { desc = "Lazygit (cwd)" })
+function _lazygit_toggle()
+  lazygit:toggle()
+end
+
+vim.api.nvim_set_keymap("n", "<c-g>", "<cmd>lua _lazygit_toggle()<CR>", { noremap = true, silent = true })
 
 vim.keymap.set("n", "<c-x>", ":bd<cr>")
 

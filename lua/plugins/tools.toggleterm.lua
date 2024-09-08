@@ -12,9 +12,9 @@ return {
         direction = "float",
         on_create = function()
           -- source .venv/bin/activate only if it exists
-          vim.cmd("TermExec cmd='[ -f .venv/bin/activate ] && source .venv/bin/activate'")
+          -- vim.cmd("TermExec cmd='[ -f .venv/bin/activate ] && source .venv/bin/activate'")
         end,
-        start_in_insert = true,
+        start_in_insert = false,
         insert_mappings = true,
         close_on_exit = true,
         float_opts = {

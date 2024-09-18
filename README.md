@@ -16,6 +16,10 @@ This config is actually an extension of the excellent lazyvim.org distro which i
 - file explorer
 - floating terminal
 - lua dev support
+- task runner (overseer)
+
+### How to use:
+Just clone this repo inside your `~/.config/nvim`
 
 ### Major keybindings
 
@@ -35,15 +39,9 @@ This config is actually an extension of the excellent lazyvim.org distro which i
 
 `<c-.>` display code outline
 
-`<c-e>`
-
-#### TODO
-
-- [ ] screenshots
-
 #### Stats
 
-Loading time: ~60ms
+Loading time (empty): ~60ms
 
 #### Setup notes
 

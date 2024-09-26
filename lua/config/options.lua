@@ -17,7 +17,7 @@ vim.g.gitblame_message_template = "<author> • <summary> • <date>"
 -- gitsigns related
 vim.wo.signcolumn = "yes"
 
--- nvim ufo things
+-- fold settings
 vim.o.foldcolumn = "0"
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99

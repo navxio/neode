@@ -2,6 +2,9 @@
 
 ### Powered by [neovim](https://neovim.io) & [lazyvim](https://github.com/lazyvim/lazyvim)
 
+![CleanShot 2024-09-18 at 14 36 56](https://github.com/user-attachments/assets/e17f314c-6d95-43b3-b942-dfc26a625f03)
+
+
 ### Intro
 
 This config is actually an extension of the excellent lazyvim.org distro which i have modulated for my own purposes. It has most of the core power of lazyvim which includes:
@@ -13,6 +16,10 @@ This config is actually an extension of the excellent lazyvim.org distro which i
 - file explorer
 - floating terminal
 - lua dev support
+- task runner (overseer)
+
+### How to use:
+Just clone this repo inside your `~/.config/nvim`
 
 ### Major keybindings
 
@@ -32,15 +39,9 @@ This config is actually an extension of the excellent lazyvim.org distro which i
 
 `<c-.>` display code outline
 
-`<c-e>`
-
-#### TODO
-
-- [ ] screenshots
-
 #### Stats
 
-Loading time: ~60ms
+Loading time (empty): ~60ms
 
 #### Setup notes
 

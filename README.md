@@ -10,17 +10,18 @@ This config is actually an extension of the excellent lazyvim.org distro which i
 
 - multiple web languages support (syntax highlighting)
 - powerful editing with lsp based features
-- auto completion with snippets support
+- auto completion with snippets
 - powerful git integration with dedicated diff viewer
 - telescope bazed fuzzy finder with different strategies
 - file explorer
 - floating terminal
 - lua dev support
-- task runner
+- task runner with auto task discovery for a variety of tools
 - debugging support
 - which-key for reviewing keybindings when typing
 - modern notification / cmdline UI
 - easy plugin management with lazyvim
+- lazy loaded by default
 
 ### How to use:
 

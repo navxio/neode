@@ -231,7 +231,7 @@ return {
             location,
           },
           lualine_x = {
-            space,
+            "overseer",
           },
           lualine_y = { macro, space },
           lualine_z = {

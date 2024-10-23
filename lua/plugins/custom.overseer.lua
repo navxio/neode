@@ -19,7 +19,7 @@ return {
     },
     opts = {
       dap = false,
-      templates = { "builtin", "navxio.go_task" },
+      templates = { "navxio.go_task" },
       task_list = {
         bindings = {
           ["<C-h>"] = false,

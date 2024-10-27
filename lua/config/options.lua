@@ -4,10 +4,9 @@
 vim.o.shell = "zsh"
 
 --
-vim.cmd("set nonumber")
-
+vim.wo.number = false
 -- set wrap
-vim.cmd("set wrap")
+vim.wo.wrap = true
 
 -- setup vim global
 

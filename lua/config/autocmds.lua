@@ -2,12 +2,6 @@
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
 
--- my autocmds copied from previous config
---
---
--- automatically setup the filetype to htmldjango for .djhtml files
---
--- vim.cmd("autocmd BufRead,BufNewFile *.djhtml set filetype=htmldjango")
 --
 -- Start terminal in insert mode
 local api = vim.api
@@ -29,9 +23,16 @@ vim.cmd("autocmd VimLeave * set guicursor=a:hor10-blinkon0")
 -- ephemeral windows close with q
 api.nvim_create_autocmd("FileType", {
   pattern = { "aerial-nav", "help", "startuptime", "qf", "lspinfo" },
-  command = [[nnoremap <buffer><silent> <Esc> :close<CR>]],
+  callback = function()
+    vim.keymap.set("n", "<Esc>", ":close<CR>", { buffer = true, silent = true })
+  end,
 })
-api.nvim_create_autocmd("FileType", { pattern = "man", command = [[nnoremap <buffer><silent> <Esc> :quit<CR>]] })
+api.nvim_create_autocmd("FileType", {
+  pattern = "man",
+  callback = function()
+    vim.keymap.set("n", "<Esc>", ":quit<CR>", { buffer = true, silent = true })
+  end,
+})
 
 --
 

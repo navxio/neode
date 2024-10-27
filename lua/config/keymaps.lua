@@ -77,8 +77,16 @@ end)
 vim.keymap.set({ "n", "v" }, "<c-o>", function()
   vim.cmd("OverseerRun")
 end, opts)
-vim.keymap.set({ "n", "v" }, "<leader>ot", "<cmd>OverseerToggle<cr>", opts)
+vim.keymap.set({ "n", "v" }, "<c-t>", function()
+  vim.cmd("OverseerToggle")
+end, opts)
 
+-- no neck pain
+vim.keymap.set({ "n", "v" }, "<c-m>", function()
+  vim.cmd("NoNeckPain")
+end)
+
+--- META
 -- open config file
 vim.keymap.set({ "n", "v" }, "<leader>rc", ":e $MYVIMRC<cr>", opts)
 

@@ -19,7 +19,22 @@ return {
     },
     opts = {
       dap = false,
-      templates = { "navxio.go_task" },
+      templates = {
+        "cargo",
+        "just",
+        "make",
+        "npm",
+        "shell",
+        "tox",
+        "vscode",
+        "mage",
+        "mix",
+        "deno",
+        "rake",
+        "composer",
+        "cargo-make",
+        "navxio.go_task",
+      },
       task_list = {
         bindings = {
           ["<C-h>"] = false,

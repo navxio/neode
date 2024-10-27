@@ -8,7 +8,7 @@
 
 This config is actually an extension of the excellent lazyvim.org distro which i have modulated for my own purposes. It has most of the core power of lazyvim which includes:
 
-- multiple web languages support (syntax highlighting)
+- multiple web languages support
 - powerful editing with lsp based features
 - auto completion with snippets
 - powerful git integration with dedicated diff viewer
@@ -23,13 +23,13 @@ This config is actually an extension of the excellent lazyvim.org distro which i
 - easy plugin management with lazyvim
 - lazy loaded by default
 
-### How to use:
+### How to use
 
 Just clone this repo inside your `~/.config/nvim`
 
 ### Major keybindings
 
-`C-` ` toggle floating terminal
+`C-` toggle floating terminal
 
 `<leader>l` lazyvim window
 

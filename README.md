@@ -6,7 +6,7 @@
 
 ### Intro
 
-This config is actually an extension of the excellent lazyvim.org distro which i have modulated for my own purposes. It has most of the core power of lazyvim which includes:
+This config is an extension of the excellent lazyvim.org distro. It has most of the core power of lazyvim which includes:
 
 - multiple web languages support
 - powerful editing with lsp based features

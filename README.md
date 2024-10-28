@@ -13,7 +13,7 @@ This config is an extension of the excellent lazyvim.org distro. It has most of 
 - auto completion with snippets
 - powerful git integration with dedicated diff viewer
 - telescope bazed fuzzy finder with different strategies
-- file explorer
+- Debugging support with `nvim-dap`
 - floating terminal
 - lua dev support
 - task runner with auto task discovery for a variety of tools

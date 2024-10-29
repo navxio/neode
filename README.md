@@ -29,6 +29,8 @@ Just clone this repo inside your `~/.config/nvim`
 
 ### Major keybindings
 
+leader key: `<space>`
+
 `C-` toggle floating terminal
 
 `<leader>l` lazyvim window
@@ -38,6 +40,14 @@ Just clone this repo inside your `~/.config/nvim`
 `<c-.>` display code outline
 
 `gcc` comment/uncomment line
+
+`<c-t>` Overseer: toggle task list
+
+`<c-o>` Overseer: run task
+
+`<c-m>` NoNeckPain toggle
+
+`<leader>/` grep the entire project
 
 #### Stats
 

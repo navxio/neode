@@ -51,7 +51,7 @@ leader key: `<space>`
 
 #### Stats
 
-Loading time (empty): ~60ms
+Loading time (empty): ~100ms
 
 #### Setup notes
 

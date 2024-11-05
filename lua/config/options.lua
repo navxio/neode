@@ -24,3 +24,6 @@ vim.o.foldenable = true
 
 -- tabby
 vim.g.tabby_keybinding_accept = "<c-e>"
+
+-- setup pyright for neovim
+vim.g.lazyvim_python_lsp = "pyright"

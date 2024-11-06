@@ -19,7 +19,7 @@ vim.keymap.set("n", "<c-x>", function()
 end)
 
 -- open aerial
-vim.keymap.set("n", "<c-.>", function()
+vim.keymap.set("n", "<leader>.", function()
   vim.cmd("Outline")
 end)
 
@@ -70,10 +70,7 @@ vim.keymap.set({ "n", "v" }, "<Leader>]", ":Gen<CR>", opts)
 
 -- overseer commands
 -- override old c-o to c-a
-vim.keymap.set("n", "<C-a>", function()
-  vim.cmd("normal! <C-o>")
-end)
---
+vim.api.nvim_set_keymap("n", "<c-a>", "<c-o>", { noremap = true, silent = true })
 vim.keymap.set({ "n", "v" }, "<c-o>", function()
   vim.cmd("OverseerRun")
 end, opts)

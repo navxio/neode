@@ -18,6 +18,10 @@ vim.keymap.set("n", "<c-x>", function()
   vim.cmd.bd()
 end)
 
+vim.keymap.set("n", "<esc><esc>", function()
+  vim.cmd.quit()
+end)
+
 -- open aerial
 vim.keymap.set("n", "<leader>.", function()
   vim.cmd("Outline")

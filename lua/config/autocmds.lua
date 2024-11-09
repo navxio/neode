@@ -7,16 +7,6 @@
 local api = vim.api
 local termGrp = api.nvim_create_augroup("terminal", { clear = true })
 
-api.nvim_create_autocmd("TermOpen", {
-  command = "startinsert",
-  group = termGrp,
-})
-
-api.nvim_create_autocmd("TermClose", {
-  command = 'call feedkeys("i")',
-  group = termGrp,
-})
-
 -- convert cursor back to line after exiting neovim
 vim.cmd("autocmd VimLeave * set guicursor=a:hor10-blinkon0")
 

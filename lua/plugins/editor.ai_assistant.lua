@@ -1,33 +1,5 @@
 return {
   {
-    "Bryley/neoai.nvim",
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-    },
-    cmd = {
-      "NeoAI",
-      "NeoAIOpen",
-      "NeoAIClose",
-      "NeoAIToggle",
-      "NeoAIContext",
-      "NeoAIContextOpen",
-      "NeoAIContextClose",
-      "NeoAIInject",
-      "NeoAIInjectCode",
-      "NeoAIInjectContext",
-      "NeoAIInjectContextCode",
-    },
-    keys = {
-      { "<leader>as", desc = "summarize text" },
-      { "<leader>ag", desc = "generate git message" },
-    },
-    config = function()
-      require("neoai").setup({
-        -- Options go here
-      })
-    end,
-  },
-  {
     "David-Kunz/gen.nvim",
     opts = {
       model = "dolphin-mixtral",
@@ -39,5 +11,13 @@ return {
   },
   {
     "TabbyML/vim-tabby",
+    lazy = false,
+    dependencies = {
+      "neovim/nvim-lspconfig",
+    },
+    init = function()
+      vim.g.tabby_agent_start_command = { "npx", "tabby-agent", "--stdio" }
+      vim.g.tabby_inline_completion_trigger = "auto"
+    end,
   },
 }

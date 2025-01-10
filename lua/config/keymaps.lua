@@ -2,17 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 --
-local Util = require("lazyvim.util")
-
-local map = Util.safe_keymap_set
-
--- override lazygit keybindings
-map("n", "<c-g>", function()
-  Util.terminal({ "lazygit" }, { cwd = Util.root(), esc_esc = true, ctrl_hjkl = false })
-end, { desc = "Lazygit (root dir)" })
-map("n", "<c-G>", function()
-  Util.terminal({ "lazygit" }, { esc_esc = false, ctrl_hjkl = false })
-end, { desc = "Lazygit (cwd)" })
 
 vim.keymap.set("n", "<c-x>", function()
   vim.cmd.bd()
@@ -30,9 +19,6 @@ vim.keymap.set("n", "tt", ":term<cr>")
 vim.keymap.set("n", "<leader>nn", ":NeoAIToggle<cr>")
 vim.keymap.set("v", "<leader>nc", ":NeoAIContext<cr>")
 vim.keymap.set("n", "<leader>ni", ":NeoAI<CR>")
-
--- remap ; to : and vice versa in normal mode
-vim.keymap.set("n", ";", ":")
 
 -- setup restnvim keybindings
 vim.keymap.set("n", "<leader>xr", "<Plug>RestNvim")

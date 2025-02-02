@@ -1,6 +1,12 @@
 {
   "extras": [
-
+    "lazyvim.plugins.extras.editor.aerial",
+    "lazyvim.plugins.extras.lang.sql",
+    "lazyvim.plugins.extras.test.core",
+    "lazyvim.plugins.extras.ui.indent-blankline",
+    "lazyvim.plugins.extras.ui.smear-cursor",
+    "lazyvim.plugins.extras.util.dot",
+    "lazyvim.plugins.extras.util.rest"
   ],
   "news": {
     "NEWS.md": "10960"

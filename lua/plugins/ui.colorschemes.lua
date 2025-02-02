@@ -1,6 +1,13 @@
 return {
   { "dasupradyumna/midnight.nvim", lazy = false, priority = 1000 },
   {
+    "wtfox/jellybeans.nvim",
+    priority = 1000,
+    config = function()
+      require("jellybeans").setup()
+    end,
+  },
+  {
     "scottmckendry/cyberdream.nvim",
     lazy = false,
     priority = 1000,
@@ -14,7 +21,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "cyberdream",
+      colorscheme = "jellybeans",
     },
   },
 }

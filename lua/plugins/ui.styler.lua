@@ -11,6 +11,11 @@ return {
         themes = {
           markdown = { colorscheme = "kanagawa" },
           help = { colorscheme = "catppuccin-mocha", background = "dark" },
+          css = { colorscheme = "cyberdream" },
+          jsx = { colorscheme = "cyberdream" },
+          tsx = { colorscheme = "cyberdream" },
+          ts = { colorscheme = "cyberdream" },
+          js = { colorscheme = "cyberdream" },
         },
       })
     end,

@@ -2,7 +2,7 @@
 
 ### Powered by [neovim](https://neovim.io) & [lazyvim](https://github.com/lazyvim/lazyvim)
 
-![CleanShot 2024-09-18 at 14 36 56](https://github.com/user-attachments/assets/e17f314c-6d95-43b3-b942-dfc26a625f03)
+![CleanShot 2025-02-02 at 22 10 19](https://github.com/user-attachments/assets/3a1daf31-c189-41a9-ac16-fb5be3dbbce2)
 
 ### Intro
 

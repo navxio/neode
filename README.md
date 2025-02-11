@@ -55,4 +55,4 @@ Loading time (empty): ~100ms
 
 #### Setup notes
 
-move config/go_task to .local/share/nvim/lazy/overseer.nvim/lua/overseer/template/navxio/go_task.lua
+move lua/go_task to .local/share/nvim/lazy/overseer.nvim/lua/overseer/template/navxio/go_task.lua

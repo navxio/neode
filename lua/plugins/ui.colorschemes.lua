@@ -8,20 +8,27 @@ return {
     end,
   },
   {
-    "scottmckendry/cyberdream.nvim",
+    "dgox16/oldworld.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      require("cyberdream").setup({
-        italic_comments = true,
-        transparent = true,
+      require("oldworld").setup({
+        variant = "oled",
+        styles = {
+          booleans = { italic = true, bold = true },
+          comments = { italic = true },
+        },
+        integrations = {
+          hop = true,
+          telescope = false,
+        },
       })
     end,
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "jellybeans",
+      colorscheme = "oldworld",
     },
   },
 }

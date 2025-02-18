@@ -4,4 +4,5 @@ return {
   -- which this plugin will affect (see :help autocommand-pattern).
   opts = { pattern = "*" },
   dependencies = { "nvim-treesitter/nvim-treesitter" },
+  lazy = true,
 }

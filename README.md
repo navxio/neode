@@ -31,11 +31,11 @@ Just clone this repo inside your `~/.config/nvim`
 
 leader key: `<space>`
 
-`C-` toggle floating terminal
+`C-`` toggle floating terminal
 
 `<leader>l` lazyvim window
 
-`<c-g>` open lazygit window (center)
+`<leader>gg` open lazygit window (center)
 
 `<c-.>` display code outline
 
@@ -45,7 +45,7 @@ leader key: `<space>`
 
 `<c-o>` Overseer: run task
 
-`<c-m>` NoNeckPain toggle
+`<leader>np` NoNeckPain toggle
 
 `<leader>/` grep the entire project
 

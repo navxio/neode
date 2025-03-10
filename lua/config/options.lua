@@ -3,8 +3,6 @@
 -- Add any additional options here
 vim.o.shell = "zsh"
 
---
-vim.wo.number = false
 -- set wrap
 vim.wo.wrap = true
 
@@ -27,3 +25,6 @@ vim.g.tabby_keybinding_accept = "<c-e>"
 
 -- setup pyright for neovim
 vim.g.lazyvim_python_lsp = "pyright"
+
+-- disable relative number
+vim.opt.relativenumber = false

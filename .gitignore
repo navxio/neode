@@ -9,3 +9,4 @@ data
 undo/
 .luarc.json
 lazy-lock.json
+lua/plugins/misc.obsidian.lua

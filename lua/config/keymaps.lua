@@ -12,9 +12,6 @@ vim.keymap.set("n", "<leader>.", function()
   vim.cmd("Outline")
 end)
 
--- open new terminal tab with tt
-vim.keymap.set("n", "tt", ":term<cr>")
-
 -- NeoAI bindings
 vim.keymap.set("n", "<leader>nn", ":NeoAIToggle<cr>")
 vim.keymap.set("v", "<leader>nc", ":NeoAIContext<cr>")

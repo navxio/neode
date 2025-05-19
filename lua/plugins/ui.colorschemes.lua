@@ -1,13 +1,6 @@
 return {
   { "dasupradyumna/midnight.nvim", lazy = false, priority = 1000 },
   {
-    "wtfox/jellybeans.nvim",
-    priority = 1000,
-    config = function()
-      require("jellybeans").setup()
-    end,
-  },
-  {
     "dgox16/oldworld.nvim",
     lazy = false,
     priority = 1000,

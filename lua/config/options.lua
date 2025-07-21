@@ -28,3 +28,12 @@ vim.g.lazyvim_python_lsp = "pyright"
 
 -- disable relative number
 vim.opt.relativenumber = false
+
+-- guicursor
+vim.o.guicursor = table.concat({
+  "n-v-c:block",
+  "i-ci-ve:ver25",
+  "r-cr:hor20",
+  "o:hor50",
+  "t:ver10", -- thin cursor in terminal
+}, ",")

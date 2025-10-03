@@ -3,30 +3,36 @@
 -- Add any additional keymaps here
 --
 
-vim.keymap.set("n", "<c-x>", function()
-  vim.cmd.bd()
-end)
-
 -- setup restnvim keybindings
 vim.keymap.set("n", "<leader>xr", "<Plug>RestNvim")
 vim.keymap.set("n", "<leader>xp", "<Plug>RestNvimPreview")
 vim.keymap.set("n", "<leader>xl", "<Plug>RestNvimLast")
 
 -- goto-preview
-vim.keymap.set("n", "gp", function()
-  require("goto-preview").goto_preview_definition()
-end)
+vim.keymap.set("n", "g-", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", { noremap = true })
 
 -- no neck pain single keybinding
 vim.keymap.set({ "n", "v" }, "<Leader>np", "<Cmd>NoNeckPain<CR>", opts)
 
--- gen nvim mappings
-vim.keymap.set({ "n", "v" }, "<Leader>]", ":Gen<CR>", opts)
+-- dial decrement
+vim.keymap.set("n", "<C-u>", function()
+  require("dial.map").manipulate("decrement", "normal")
+end)
 
--- overseer commands
--- override old c-o to c-a
-vim.api.nvim_set_keymap("n", "<c-a>", "<c-o>", { noremap = true, silent = true })
-vim.keymap.set({ "n", "v" }, "<c-o>", function()
+vim.keymap.set("n", "g<C-u>", function()
+  require("dial.map").manipulate("decrement", "gnormal")
+end)
+vim.keymap.set("x", "<C-u>", function()
+  require("dial.map").manipulate("decrement", "visual")
+end)
+vim.keymap.set("x", "g<C-u>", function()
+  require("dial.map").manipulate("decrement", "gvisual")
+end)
+-- kill a buffer
+vim.keymap.set("n", "<c-w>", function()
+  vim.cmd.bd()
+end)
+vim.keymap.set({ "n", "v" }, "<c-x>", function()
   vim.cmd("OverseerRun")
 end, opts)
 

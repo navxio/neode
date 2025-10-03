@@ -31,9 +31,10 @@ vim.opt.relativenumber = false
 
 -- guicursor
 vim.o.guicursor = table.concat({
-  "n-v-c:block",
+  "c:ver20-blinkon0",
+  "n-v:block",
   "i-ci-ve:ver25",
   "r-cr:hor20",
   "o:hor50",
-  "t:ver10", -- thin cursor in terminal
+  "t:hor10-blinkon0",
 }, ",")

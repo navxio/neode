@@ -7,16 +7,6 @@ vim.keymap.set("n", "<c-x>", function()
   vim.cmd.bd()
 end)
 
--- open aerial
-vim.keymap.set("n", "<leader>.", function()
-  vim.cmd("Outline")
-end)
-
--- NeoAI bindings
-vim.keymap.set("n", "<leader>nn", ":NeoAIToggle<cr>")
-vim.keymap.set("v", "<leader>nc", ":NeoAIContext<cr>")
-vim.keymap.set("n", "<leader>ni", ":NeoAI<CR>")
-
 -- setup restnvim keybindings
 vim.keymap.set("n", "<leader>xr", "<Plug>RestNvim")
 vim.keymap.set("n", "<leader>xp", "<Plug>RestNvimPreview")
@@ -44,11 +34,6 @@ end, opts)
 vim.keymap.set({ "n", "v" }, "<c-t>", function()
   vim.cmd("OverseerToggle")
 end, opts)
-
--- no neck pain
-vim.keymap.set({ "n", "v" }, "<c-m>", function()
-  vim.cmd("NoNeckPain")
-end)
 
 --- META
 -- open config file

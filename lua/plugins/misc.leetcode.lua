@@ -3,6 +3,7 @@ return {
     "kawre/leetcode.nvim",
     build = ":TSUpdate html",
     event = { "CmdlineEnter", "BufReadPost" },
+    enabled = false,
     dependencies = {
       "nvim-telescope/telescope.nvim",
       "nvim-lua/plenary.nvim", -- required by telescope

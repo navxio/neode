@@ -8,10 +8,12 @@ return {
       { "<leader>]", desc = "GenAI" },
     },
     cmd = "Gen",
+    enabled = false,
   },
   {
     "TabbyML/vim-tabby",
     lazy = false,
+    enabled = false,
     dependencies = {
       "neovim/nvim-lspconfig",
     },

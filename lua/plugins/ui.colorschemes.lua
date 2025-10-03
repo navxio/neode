@@ -4,6 +4,7 @@ return {
     "dgox16/oldworld.nvim",
     lazy = false,
     priority = 1000,
+    enabled = false,
     config = function()
       require("oldworld").setup({
         variant = "oled",
@@ -19,9 +20,20 @@ return {
     end,
   },
   {
+    "ellisonleao/gruvbox.nvim",
+    lazy = true,
+  },
+  {
+    "maxmx03/solarized.nvim",
+    lazy = false,
+    config = function()
+      require("solarized").setup({})
+    end,
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "oldworld",
+      colorscheme = "solarized",
     },
   },
 }

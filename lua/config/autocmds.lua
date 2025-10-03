@@ -5,7 +5,6 @@
 --
 -- Start terminal in insert mode
 local api = vim.api
-local termGrp = api.nvim_create_augroup("terminal", { clear = true })
 
 -- convert cursor back to line after exiting neovim
 vim.cmd("autocmd VimLeave * set guicursor=a:hor10-blinkon0")
@@ -21,6 +20,14 @@ api.nvim_create_autocmd("FileType", {
   pattern = "man",
   callback = function()
     vim.keymap.set("n", "<Esc>", ":quit<CR>", { buffer = true, silent = true })
+  end,
+})
+
+vim.api.nvim_create_autocmd("TermOpen", {
+  pattern = "*",
+  callback = function()
+    -- map <Esc> in terminal mode of this buffer to exit to normal
+    vim.api.nvim_buf_set_keymap(0, "t", "<Esc>", "<C-\\><C-n>", { noremap = true, silent = true })
   end,
 })
 

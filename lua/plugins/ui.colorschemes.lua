@@ -1,27 +1,7 @@
 return {
-  { "dasupradyumna/midnight.nvim", lazy = false, priority = 1000 },
   {
-    "dgox16/oldworld.nvim",
+    "rebelot/kanagawa.nvim",
     lazy = false,
-    priority = 1000,
-    enabled = false,
-    config = function()
-      require("oldworld").setup({
-        variant = "oled",
-        styles = {
-          booleans = { italic = true, bold = true },
-          comments = { italic = true },
-        },
-        integrations = {
-          hop = true,
-          telescope = false,
-        },
-      })
-    end,
-  },
-  {
-    "ellisonleao/gruvbox.nvim",
-    lazy = true,
   },
   {
     "maxmx03/solarized.nvim",
@@ -33,7 +13,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "solarized",
+      colorscheme = "kanagawa",
     },
   },
 }

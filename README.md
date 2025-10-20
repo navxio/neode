@@ -1,12 +1,13 @@
-## Neo Development Environment
+# Neo Development Environment
 
-### Powered by [neovim](https://neovim.io) & [lazyvim](https://github.com/lazyvim/lazyvim)
+## Powered by [neovim](https://neovim.io) & [lazyvim](https://github.com/lazyvim/lazyvim)
 
 ![CleanShot 2025-02-02 at 22 10 19](https://github.com/user-attachments/assets/3a1daf31-c189-41a9-ac16-fb5be3dbbce2)
 
 ### Intro
 
-This config is an extension of the excellent lazyvim.org distro. It has most of the core power of lazyvim which includes:
+This config is an extension of the excellent lazyvim.org distro. It has most of
+the core power of lazyvim which includes:
 
 - multiple web languages support
 - powerful editing with lsp based features
@@ -31,21 +32,19 @@ Just clone this repo inside your `~/.config/nvim`
 
 leader key: `<space>`
 
-`C-`` toggle floating terminal
+`<leader>ft` toggle floating terminal
 
 `<leader>l` lazyvim window
 
 `<leader>gg` open lazygit window (center)
 
-`<c-.>` display code outline
+`<leader>cs` show project symbols
 
 `gcc` comment/uncomment line
 
 `<c-t>` Overseer: toggle task list
 
-`<c-o>` Overseer: run task
-
-`<leader>np` NoNeckPain toggle
+`<c-x>` Overseer: run task
 
 `<leader>/` grep the entire project
 

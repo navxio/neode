@@ -4,16 +4,13 @@ return {
     lazy = false,
   },
   {
-    "maxmx03/solarized.nvim",
+    "serhez/teide.nvim",
     lazy = false,
-    config = function()
-      require("solarized").setup({})
-    end,
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "teide",
     },
   },
 }

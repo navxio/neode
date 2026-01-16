@@ -2,7 +2,8 @@
 
 ## Powered by [neovim](https://neovim.io) & [lazyvim](https://github.com/lazyvim/lazyvim)
 
-![CleanShot 2025-02-02 at 22 10 19](https://github.com/user-attachments/assets/3a1daf31-c189-41a9-ac16-fb5be3dbbce2)
+<img width="3240" height="2122" alt="Config UI screenshot" src="https://github.com/user-attachments/assets/76d61f85-9780-41b5-8009-df4d13224dcd" />
+
 
 ### Intro
 
